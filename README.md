@@ -11,5 +11,9 @@ python -m venv venv-hypyp
 source venv-hypyp/bin/activate
 
 # Install HyPyP using pip
-pip install git+https://github.com/patricefortin/HyPyP.git@feature/fnirs
+git clone -b feature/fnirs https://github.com/patricefortin/HyPyP.git
+cd HyPyP
+pip install -r requirements.txt
+pip install -e .
+
 ```
